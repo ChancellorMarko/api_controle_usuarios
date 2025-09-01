@@ -1,0 +1,3 @@
+# Partes não necessárias
+node_modules/
+.env
