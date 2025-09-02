@@ -1,9 +1,8 @@
-import Express from 'express'
+import { App } from "./index.js";
 
-const app = Express();
+function bootstrap() {
+    const app = new App();
+    app.start();
+}
 
-app.get('/user', (req, res) => {
-    res.send('Ok!');
-})
-
-app.listen(3000);
+bootstrap();

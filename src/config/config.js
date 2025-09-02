@@ -1,16 +1,16 @@
-import appConfig from './index.js'
+import config from './index.js'
 
 module.exports = {
     development: {
-        url: appConfig.db.url,
-        dialect: appConfig.db.dialect
+        url: config.db.url,
+        dialect: config.db.dialect
     },
     test: {
-        url: appConfig.db.url,
-        dialect: appConfig.db.dialect
+        url: config.db.url,
+        dialect: config.db.dialect
     },
     production: {
-        url: appConfig.db.url,
-        dialect: appConfig.db.dialect
+        url: config.db.url,
+        dialect: config.db.dialect
     },
-}
+};
