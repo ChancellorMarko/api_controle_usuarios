@@ -1,39 +1,34 @@
 {
   "name": "api_controle_usuarios",
   "version": "0.0.1",
-  "description": "",
+  "description": "API de autenticação de usuários",
+  "main": "src/Server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon ./src/server.js"
+    "start": "node src/Server.js",
+    "dev": "nodemon src/Server.js",
+    "docker": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
   },
   "keywords": [],
-  "author": "Marcos",
+  "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "@types/node": "^24.3.0",
-    "axios": "^1.11.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "joi": "^18.0.1",
     "jsonwebtoken": "^9.0.2",
-    "module-alias": "^2.2.3",
     "morgan": "^1.10.1",
-    "node": "^22.19.0",
     "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
     "redis": "^5.8.2",
     "sequelize": "^6.37.7",
-    "swagger-jsdoc": "^6.2.8",
+    "sequelize-cli": "^6.6.3",
     "swagger-ui-express": "^5.0.1",
-    "uuid": "^11.1.0"
-  },
-  "_moduleAliases": {
-    "src": "src"
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10",
-    "sequelize-cli": "^6.6.3"
+    "nodemon": "^3.1.10"
   }
 }
