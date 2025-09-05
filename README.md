@@ -15,3 +15,15 @@ A API de controle conta com a geração de tokens JWT e hash de senhas que são 
 
 ## 5: Teste rota protegida por token:
 ![cadastro](./prints/protected_erro_401.png)
+
+
+# Comandos para rodar:
+Criar o banco de dados e o servidor redis:
+```
+docker compose up 
+```
+
+Rodar o aplicativo localmente:
+```
+npm start
+```
