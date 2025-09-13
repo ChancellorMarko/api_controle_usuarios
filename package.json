@@ -1,0 +1,39 @@
+{
+  "name": "auth-api",
+  "version": "0.0.1",
+  "description": "API que permite a autenticação de usuários utilizando login com JWT",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/Server.js",
+    "dev": "nodemon src/Server.js",
+    "docker": "docker-compose up -d"
+  },
+  "keywords": [
+    "API",
+    "NODE",
+    "REDIS",
+    "POSTGRES",
+    "JAVASCRIPT"
+  ],
+  "author": "Marco",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "redis": "^5.8.2",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
